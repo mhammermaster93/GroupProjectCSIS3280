@@ -1,0 +1,47 @@
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Other Classes for Page Styling */
+
+html body {
+    background-image: url(../img/BokehSkyline.jpg);
+    background-size: cover;
+    height: 100%;
+    
+}
+
+.content {
+    min-height: calc(100vh - 70px);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* anchor styles */
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: lightskyblue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: orangered;
+  }
+  
+  /* selected link */
+  a:active {
+    color: burlywood;
+  }
