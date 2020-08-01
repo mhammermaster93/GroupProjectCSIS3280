@@ -5,21 +5,21 @@ class Reservation {
 
     //properties
     private $reservationNr;
-    private $id;
+    private $roomType;
+    private $email;
     private $roomNr;
     private $startDate;
     private $endDate;
     private $paymentDate;
-    private $serviceIncluded; 
- 
-    private $totalPrice; //???
+    private $totalPrice;
+    const SALES_TAX = 0.08;
 
     //setters
-    function setId($id){
-        $this->type=$id;
+    function setEmail($email){
+        $this->email=$email;
     }
-    function setRoomNr($roomNr){
-        $this->roomNr=$roomNr;
+    function setRoomType($roomType){
+        $this->roomType=$roomType;
     }
     function setStartDate($startDate){
         $this->setStartDate=$startDate;
@@ -30,16 +30,19 @@ class Reservation {
     function setPaymentDate($paymentDate){
         $this->paymentDate=$paymentDate;
     }
-    function setServiceIncluded($serviceIncluded){
-        $this->serviceIncluded=$serviceIncluded;
+    function setTotalPrice($totalPrice){
+        $this->totalPrice=$totalPrice;
     }
 
     //getters
     function getReservationNr(): int {
         return $this->reservationNr;
     }
-    function getId(): int {
-        return $this->id;
+    function getRoomType(): string {
+        return $this->roomType;
+    }
+    function getEmail(): string {
+        return $this->email;
     }
     function getRoomNr(): int {
         return $this->roomNr;
@@ -47,37 +50,28 @@ class Reservation {
     function getStartDate() {
         return $this->startDate;
     }
-    function getEndDate(): int {
+    function getEndDate()  {
         return $this->endDate;
     }
     function getPaymentDate(): int {
         return $this->paymentDate;
     }
-    function getServiceIncluded(): array {
-        return $this->serviceIncluded;
+    //this function returns number of reserved days
+    function noOfDays($date_1 , $date_2 , $differenceFormat = '%a' ) {
+        $datetime1 = date_create($date_1);
+        $datetime2 = date_create($date_2);
+   
+        $interval = date_diff($datetime1, $datetime2);
+        return $interval->format($differenceFormat); 
+   }
+    //this function calculates total price of the reservation including sales tax
+    function calculateTotalPrice(Reservation $res) : float {
+        $room=$res->getRoomType;
+        $noOfDays=noOfDays($res->getStartDate(), $res->getEndDate());
+        $price=$room->getPricePerNight($noOfDays);
+        $total=($noOfDays*$price);
+        return $totalPriceWithTax=$total*(1+SALES_TAX);
     }
-
-    function calculateTotalPrice() : float {
-
-    }
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>

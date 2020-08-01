@@ -8,12 +8,15 @@ class Standard extends Room{
     private $pricePerNight;
 
     //getter
-    public function getPricePerNight($dayOfWeek){
-       if($dayOfWeek=='Fri' || $dayOfWeek=='Sat' || $dayOfWeek=='Sun' ){
-        return $pricePerNight=85;
-       }
-       else return $pricePerNight=70;
-    }
+    public function getPricePerNight($noOfDays){
+        if($noOfDays>3 && $noOfDays <= 7){
+         return $pricePerNight=80;
+        }
+        if ($noOfDays>7){
+         return $pricePerNight=65;
+        }
+        else return $pricePerNight=95;
+     }
 
     //setter
     function setPricePerNight($price){

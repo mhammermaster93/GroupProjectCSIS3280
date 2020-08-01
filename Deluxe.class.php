@@ -1,22 +1,22 @@
 <?php
 
 // This is the class extension for room
-class Suite extends Room {
+class Deluxe extends Room {
     
     //properties  
-    private $type="Suite";
+    private $type="Standard";
     private $pricePerNight;
 
     //getter
     public function getPricePerNight($noOfDays){
-       if($noOfDays>3 && $noOfDays <= 7){
-        return $pricePerNight=105;
-       }
-       if ($noOfDays>7){
-        return $pricePerNight=90;
-       }
-       else return $pricePerNight=120;
-    }
+        if($noOfDays>3 && $noOfDays <= 7){
+         return $pricePerNight=115;
+        }
+        if ($noOfDays>7){
+         return $pricePerNight=100;
+        }
+        else return $pricePerNight=130;
+     }
 
     //setter
     function setPricePerNight($price){

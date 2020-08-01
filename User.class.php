@@ -4,18 +4,23 @@
 class User{
 
 //properties
-private $id;
+private $email;
 private $password;
 private $userType;
 private $full_name;
 private $address;
 private $postalCode;
-private $email;
+private $city;
+private $country;
 private $phone;
 
+
 //setters
-function setId($id){
-    $this->id=$id;
+function setEmail($email){
+    $this->email=$email;
+}
+function setPassword($password){
+    $this->password=$password;
 }
 function setUserType($userType){
     $this->userType=$userType;
@@ -29,16 +34,22 @@ function setAddress($address){
 function setPostalCode($postalCode){
     $this->postalCode=$postalCode;
 }
-function setEmail($email){
-    $this->email=$email;
+function setCity($city){
+    $this->city=$city;
+}
+function setCountry($country){
+    $this->country=$country;
 }
 function setPhone($phone){
     $this->phone=$phone;
 }
 
 //getters
-function getId(): int {
-    return $this->id;
+function getEmail(): string {
+    return $this->email;
+}
+function getPassword(): string {
+    return $this->password;
 }
 function getUserType(): string {
     return $this->userType;
@@ -52,8 +63,11 @@ function getAddress(): string {
 function getPostalCode(): string {
     return $this->postalCode;
 }
-function getEmail(): string {
-    return $this->email;
+function getCity(): string {
+    return $this->city;
+}
+function getCountry(): string {
+    return $this->country;
 }
 function getPhone(): string {
     return $this->phone;

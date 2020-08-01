@@ -22,12 +22,13 @@ function setPrice($price){
 function getType(): string{
     return $this->type;
 }
-function getRoomNr(): int {
+function getServiceNr(): int {
     return $this->serviceNr;
 }
 function getPrice(): float {
     return $this->price;
 }
+
 
 
 

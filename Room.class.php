@@ -4,21 +4,13 @@
 
 abstract class Room{
    
-    //properties    
-    protected $roomNr;
+   public $roomNr;
+
 
     // abstract method that will be implemented in the child
-    abstract public function getPricePerNight(): float;
+    abstract public function getPricePerNight($noOfDays);
 
-    //Setter
-    function setRoomNr($roomNr){
-        $this->roomNr=$roomNr;
-    }
 
-    //Getter
-    function getRoomNr(): int {
-        return $this->roomNr;
-    }
 
 
 }
