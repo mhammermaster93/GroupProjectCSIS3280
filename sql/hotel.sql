@@ -3,15 +3,14 @@ CREATE DATABASE hotel;
 USE hotel;
 
 CREATE TABLE User
-( userId INT NOT NULL PRIMARY KEY,
-  password VARCHAR(20) NOT NULL,
+( userId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  password VARCHAR(250) NOT NULL,
   userType VARCHAR(20) NOT NULL, 
   name VARCHAR(40) NOT NULL,
   address VARCHAR (50) NOT NULL,
   postalCode VARCHAR(8) NOT NULL,
   city VARCHAR(20),
   country VARCHAR(20) NOT NULL,
-  dob DATE NOT NULL,
   email VARCHAR(40)  NOT NULL,  
   phone VARCHAR(20) NOT NULL   
 ) ENGINE=InnoDB;
@@ -53,11 +52,11 @@ FOREIGN KEY (reservationNr) REFERENCES Reservation(reservationNr) ON DELETE CASC
 )ENGINE=InnoDB;
 
  INSERT INTO User VALUES
-  (182983, 'password1', 'manager', 'John Smith', '254 Oak Street', 'E4D4J8', 'Burnaby' , 'Canada' , '1990-09-12', 'johnsmith@gmail.com', '2939098376'),
-  (980283, 'password2', 'receptionist', 'Jane Thomson', '2549 Cambie Street', 'J4F4J8', 'Vancouver' , 'Canada' , '1985-03-22', 'janethomson@gmail.com', '2839098770'),
-  (450298, 'password3', 'receptionist', 'Arnold Baker', '8549 Marine Drive', 'F4F4G8', 'Vancouver' , 'Canada' , '1982-03-22', 'abaker@shaw.ca', '4569095670'),
-  (938962, 'password4', 'customer', 'Emma Woods', '1080 Royal Ave', 'D4D4J6', 'Toronto' , 'Canada' , '2000-09-08', 'emma@yahoo.com', '8359098839'),
-  (987961, 'password5', 'customer', 'Mary Green', '234 River Street', 'K4D8J9', 'Bristol' , 'UK' , '1998-12-08', 'skjl@hotmail.com', '00439098839');
+  (182983, '$2y$10$p6jvGgfB/X0asGYXFyQt2eYtWi9uqMO9rG3Vlhm.WWqxQIzqm6/Y.', 'manager', 'John Smith', '254 Oak Street', 'E4D4J8', 'Burnaby' , 'Canada', 'johnsmith@gmail.com', '2939098376'),
+  (980283, 'password2', 'receptionist', 'Jane Thomson', '2549 Cambie Street', 'J4F4J8', 'Vancouver' , 'Canada', 'janethomson@gmail.com', '2839098770'),
+  (450298, 'password3', 'receptionist', 'Arnold Baker', '8549 Marine Drive', 'F4F4G8', 'Vancouver' , 'Canada', 'abaker@shaw.ca', '4569095670'),
+  (938962, 'password4', 'customer', 'Emma Woods', '1080 Royal Ave', 'D4D4J6', 'Toronto' , 'Canada', 'emma@yahoo.com', '8359098839'),
+  (987961, 'password5', 'customer', 'Mary Green', '234 River Street', 'K4D8J9', 'Bristol' , 'UK', 'skjl@hotmail.com', '00439098839');
  
 INSERT INTO Reservation VALUES 
 (1, 938962, '2020-09-06', '2020-09-10', '2020-07-20'),

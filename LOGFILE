@@ -1,0 +1,51 @@
+[31-Jul-2020 22:22:18 UTC] PHP Notice:  Undefined variable: title in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 21
+[31-Jul-2020 22:22:19 UTC] PHP Stack trace:
+[31-Jul-2020 22:22:19 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelLogin.php:0
+[31-Jul-2020 22:22:19 UTC] PHP   2. Page::header() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelLogin.php:13
+[01-Aug-2020 20:42:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Validate' not found in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 22
+[01-Aug-2020 20:43:01 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\Validate.class.php on line 17
+[01-Aug-2020 20:43:01 UTC] PHP Stack trace:
+[01-Aug-2020 20:43:01 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:43:01 UTC] PHP   2. Validate::validateInput() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:23
+[01-Aug-2020 20:43:01 UTC] PHP Notice:  Undefined index: confirmPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\Validate.class.php on line 17
+[01-Aug-2020 20:43:01 UTC] PHP Stack trace:
+[01-Aug-2020 20:43:01 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:43:01 UTC] PHP   2. Validate::validateInput() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:23
+[01-Aug-2020 20:43:01 UTC] PHP Notice:  Undefined index: fnameInput in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\Validate.class.php on line 21
+[01-Aug-2020 20:43:01 UTC] PHP Stack trace:
+[01-Aug-2020 20:43:01 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:43:01 UTC] PHP   2. Validate::validateInput() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:23
+[01-Aug-2020 20:43:01 UTC] PHP Notice:  Undefined index: addressInput in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\Validate.class.php on line 29
+[01-Aug-2020 20:43:01 UTC] PHP Stack trace:
+[01-Aug-2020 20:43:01 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:43:01 UTC] PHP   2. Validate::validateInput() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:23
+[01-Aug-2020 20:44:52 UTC] PHP Notice:  Undefined index: addressInput in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\Validate.class.php on line 29
+[01-Aug-2020 20:44:52 UTC] PHP Stack trace:
+[01-Aug-2020 20:44:52 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:44:53 UTC] PHP   2. Validate::validateInput() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:23
+[01-Aug-2020 20:47:09 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 33
+[01-Aug-2020 20:47:09 UTC] PHP Stack trace:
+[01-Aug-2020 20:47:09 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:49:22 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 33
+[01-Aug-2020 20:49:22 UTC] PHP Stack trace:
+[01-Aug-2020 20:49:22 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:53:20 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 33
+[01-Aug-2020 20:53:20 UTC] PHP Stack trace:
+[01-Aug-2020 20:53:20 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 20:57:52 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 33
+[01-Aug-2020 20:57:52 UTC] PHP Stack trace:
+[01-Aug-2020 20:57:52 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 21:03:36 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 33
+[01-Aug-2020 21:03:36 UTC] PHP Stack trace:
+[01-Aug-2020 21:03:36 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 21:06:53 UTC] PHP Notice:  Undefined index: inputPassword in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 34
+[01-Aug-2020 21:06:53 UTC] PHP Stack trace:
+[01-Aug-2020 21:06:53 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php:0
+[01-Aug-2020 21:06:53 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to User::setPassword() must be of the type string, null given, called in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php on line 34 and defined in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\User.class.php:22
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php(34): User->setPassword(NULL)
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\User.class.php on line 22

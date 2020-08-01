@@ -1,9 +1,4 @@
-<?php 
-class Page {
-  
- function header() {
-   ?>
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
   <head>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -35,10 +30,6 @@ class Page {
           </div>
       </nav>
     <!--navbar ends here-->
-<?php } 
-
-      function showContent() {
-  ?>
 <div class="content">
     <div class="row">
         <div class="col-6 offset-3">
@@ -47,17 +38,13 @@ class Page {
                     <h1 class="display-4">Welcome</h1>
                     <p class="lead">Welcome to Hotel Blank, please follow the prompts below</p>
                     <hr class="my-4">
-                    <a href="sign-in.html"><button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Sign In</button></a>        
-                    <a href="create-account.html"><button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Create Account</button></a>
+                    <a href="hotelLogin.php"><button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Sign In</button></a>        
+                    <a href="hotelRegistration.php"><button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Create Account</button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <?php } 
-
-    function showFooter() {
-    ?>
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container">
           <div class="row">
@@ -75,11 +62,3 @@ class Page {
         </div>
       </footer>
 </body>
-<?php } //end of footer method.
-
-/*function showRegisterForm() {
-
-} */
-
-    } //end of page class
-    ?>
