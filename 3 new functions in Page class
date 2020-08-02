@@ -1,0 +1,102 @@
+static function displayReservationList (Array $reservations)    {
+  ?>
+       <div class="content">
+         <div class="row">
+      <h1>Current reservations</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Reservation nr</th> 
+                  <th>Payment date</th>
+                  <th>Full Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Room type</th>
+                  <th>Room nr</th>
+                  <th>Check-in</th>
+                  <th>Check-out</th>
+                  <th>Total price</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+          </thead>
+          <?php
+             $i=0;
+              foreach($reservations as $reservation)  {
+                 if($i%2==0){
+                  echo "<tr class=\"evenRow\">";
+                 }
+                 else {
+                  echo "<tr class=\"oddRow\">";
+                 }      
+                   echo "<td>".$reservation->getReservationNr()."</td>";
+                   echo "<td>".$reservation->getPaymentDate()."</td>";
+                   echo "<td>".$reservation->getFullName()."</td>";
+                   echo "<td>".$reservation->getEmail()."</td>";
+                   echo "<td>".$reservation->getPhone()."</td>";
+                   echo "<td>".$reservation->getRoomType()."</td>";
+                   echo "<td>".$reservation->getRoomNr()."</td>";
+                   echo "<td>".$reservation->getStartDate()."</td>";
+                   echo "<td>".$$reservation->getEndDate()."</td>";
+                   echo "<td>".calculateTotalPrice($reservation)."</td>";
+                   echo '<td><a href="?action=edit&FeedbackId='.$reservation->getReservationNr().'">Edit</td>';
+                   echo '<td><a href="?action=delete&FeedbackId='.$reservation->getReservationNr().'">Delete</td>';
+                   echo "</tr>";
+                   $i++;
+              } 
+          echo "</table></section>";
+          echo "</div></div>";
+  }
+
+  static function displayUserReservation (Array $reservations)    {  
+    ?>
+         <div class="content">
+           <div class="row">
+        <h1>Your reservation</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reservation nr</th> 
+                    <th>Payment date</th>
+                    <th>Room type</th>
+                    <th>Check-in</th>
+                    <th>Check-out</th>
+                    <th>Total price</th>
+            </thead>
+            <?php
+               $i=0;
+                foreach($reservations as $reservation)  {
+                   if($i%2==0){
+                    echo "<tr class=\"evenRow\">";
+                   }
+                   else {
+                    echo "<tr class=\"oddRow\">";
+                   }      
+                     echo "<td>".$reservation->getReservationNr()."</td>";
+                     echo "<td>".$reservation->getPaymentDate()."</td>";
+                     echo "<td>".$reservation->getRoomType()."</td>";
+                     echo "<td>".$reservation->getStartDate()."</td>";
+                     echo "<td>".$reservation->getEndDate()."</td>";
+                     echo "<td>".calculateTotalPrice($reservation)."</td>";
+                     echo "</tr>";
+                     $i++;
+                } 
+            echo "</table></section>";
+            echo "</div></div>";
+    }
+static function displayUserDetails(User $user) {  ?>
+       <div class="content">
+         <div class="row">   
+          <br>
+          <p>User Name:  <?php echo $user->getFullName(); ?><p>
+          <p>Email Address:  <?php echo $user->getEmail(); ?><p>
+          <p>Address:  <?php echo $user->getAddress() ?><p>
+          <p>Postal Code:  <?php echo $user->getPostalCode() ?><p>
+          <p>City:  <?php echo $user->getCity() ?><p>
+          <p>Country:  <?php echo $user->getCountry() ?><p>
+          <p>Phone:  <?php echo $user->getPhone() ?><p>
+          <a href="<?php echo 'userLogout.php'?>">
+          <input type="submit" id="logout" name="logout" value="Logout"> </a>
+       </div>
+       </div>
+       <?php
+  }
