@@ -1,0 +1,12 @@
+//get all reservations of one user
+    static function getUserReservations ($email)  {
+       $sqlJoin= "SELECT reservationNr, roomType, startDate, endDate, paymentDate
+                       FROM Reservation
+                       WHERE Reservation.email=:email
+                       ORDER BY startDate;";
+    
+            self::$db->query($sqlJoin);
+            self::$db->execute();
+           
+            return self::$db->resultSet(); 
+    }
