@@ -6,9 +6,7 @@ require_once("inc/Entity/Reservation.class.php");
 require_once("inc/Entity/Room.class.php");
 require_once("inc/Entity/Service.class.php");
 require_once("inc/Entity/User.class.php");
-require_once("inc/Entity/Subclasses/Deluxe.class.php");
-require_once("inc/Entity/Subclasses/Standard.class.php");
-require_once("inc/Entity/Subclasses/Suite.class.php");
+
 require_once("inc/Utility/PDOService.class.php");
 require_once("inc/Utility/UserDAO.class.php");
 require_once("inc/Utility/ReservationDAO.class.php");

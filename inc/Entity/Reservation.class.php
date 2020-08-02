@@ -1,4 +1,3 @@
-
 <?php
 
 class Reservation {
@@ -60,18 +59,33 @@ class Reservation {
     function noOfDays($date_1 , $date_2 , $differenceFormat = '%a' ) {
         $datetime1 = date_create($date_1);
         $datetime2 = date_create($date_2);
-   
+
         $interval = date_diff($datetime1, $datetime2);
         return $interval->format($differenceFormat); 
    }
-    //this function calculates total price of the reservation including sales tax
-    function calculateTotalPrice(Reservation $res) : float {
-        $room=$res->getRoomType();
-        $noOfDays=$res->noOfDays($res->getStartDate(), $res->getEndDate());
-        $price=$room->getPricePerNight($noOfDays);
-        $total=($noOfDays*$price);
-        return $totalPriceWithTax=$total*(1+SALES_TAX);
+   //this function calculates total price
+   public function getPricePerNight($noOfDays){
+    if($noOfDays>3 && $noOfDays <= 7){
+         $price= $noOfDays * 115;
+         return $totalPriceWithTax= $price*(1+SALES_TAX);
     }
+    if ($noOfDays>7){
+      $price=100*$noOfDays;
+      return $totalPriceWithTax= $price*(1+SALES_TAX);
+
+    }
+    else { 
+        $price= $noOfDays * 125;
+         return $totalPriceWithTax= $price*(1+SALES_TAX);
+    }
+ }
+
+    public function calculateTotalPrice() {
+        
+    }
+
+
+
 }
 
 ?>

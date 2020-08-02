@@ -1,17 +1,20 @@
+  
 <?php
 
-    //this is an abstract class room
-
-abstract class Room{
+class Room{
    
-   public $roomNr;
-
-
-    // abstract method that will be implemented in the child
-    abstract public function getPricePerNight($noOfDays);
-
-
-
+     //properties  
+     private $type;
+     public $roomNr;
+ 
+     //setter
+     function setType($type){
+         $this->type=$type;
+     }
+     //getter
+     function getType() {
+         return $this->type;
+      }
 
 }
 

@@ -6,9 +6,7 @@ require_once("inc/Entity/Reservation.class.php");
 require_once("inc/Entity/Room.class.php");
 require_once("inc/Entity/Service.class.php");
 require_once("inc/Entity/User.class.php");
-require_once("inc/Entity/Subclasses/Deluxe.class.php");
-require_once("inc/Entity/Subclasses/Standard.class.php");
-require_once("inc/Entity/Subclasses/Suite.class.php");
+
 require_once("inc/Utility/PDOService.class.php");
 require_once("inc/Utility/ReservationDAO.class.php");
 require_once("inc/Utility/RoomDAO.class.php");
@@ -21,14 +19,15 @@ session_start();
 
 if(isset($_POST['submit'])){
         // initialize the DAO
-        ReservationDAO::initialize();
+        ReservationDAO::init();
+        RoomDAO::init();
         // instantiate a new avatar
         $nr = new Reservation();
         // assemble the reservation data 
         $nr->setRoomType($_POST["roomType"]);
-         $nr->setEmail("test");
+         $nr->setEmail($_SESSION['logged_in']);
        //check avaiable rooms
-        $rooms=getAvaiableRooms($nr->getRoomType());
+        RoomDAO::getAvaiableRooms($nr->getRoomType());
         $chosenRoom=array_rand($rooms);
         $nr->setRoomNr($rooms[$choseRoom]);
         $nr->setStartDate($_POST["startDate"]);

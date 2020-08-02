@@ -250,3 +250,192 @@ Stack trace:
 #1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
 #2 {main}
   thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 08:08:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ReservationDAO::init() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 26
+[02-Aug-2020 08:09:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOService::resultSet() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\ReservationDAO.class.php:46
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(30): ReservationDAO::getReservations('july@test.com')
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\ReservationDAO.class.php on line 46
+[02-Aug-2020 08:09:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 08:42:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 08:49:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:51:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:51:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:51:15 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Page::displayUserDetails() must be an instance of User, bool given, called in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelViewReservations.php on line 28 and defined in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php:203
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelViewReservations.php(28): Page::displayUserDetails(false)
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 203
+[02-Aug-2020 08:51:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:51:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:51:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:51:35 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Page::displayUserDetails() must be an instance of User, bool given, called in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelViewReservations.php on line 28 and defined in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php:203
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelViewReservations.php(28): Page::displayUserDetails(false)
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 203
+[02-Aug-2020 08:51:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getEmail() on bool in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 30
+[02-Aug-2020 08:53:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'password' at row 1 in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php:72
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php(72): PDOStatement->execute()
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\UserDAO.class.php(33): PDOService->execute()
+#2 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelRegistration.php(43): UserDAO::createUser(Object(User))
+#3 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php on line 72
+[02-Aug-2020 08:54:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:37:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:37:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:37:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:37:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:37:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:39:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:40:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getPricePerNight() on string in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:71
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(242): Reservation->calculateTotalPrice(Object(Reservation))
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 71
+[02-Aug-2020 16:43:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Reservation::calculateTotalPrice() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php:242
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 242
+[02-Aug-2020 16:43:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Reservation::calculateTotalPrice() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php:242
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(31): Page::displayUserDetails(Object(User), Array)
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 242
+[02-Aug-2020 16:45:49 UTC] PHP Warning:  require_once(C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Subclasses\Deluxe.class.php): failed to open stream: No such file or directory in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 10
+[02-Aug-2020 16:45:49 UTC] PHP Stack trace:
+[02-Aug-2020 16:45:49 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:0
+[02-Aug-2020 16:45:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Subclasses\Deluxe.class.php' (include_path='.;C:\php\pear') in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 10
+[02-Aug-2020 16:45:49 UTC] PHP Stack trace:
+[02-Aug-2020 16:45:49 UTC] PHP   1. {main}() C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:0
+[02-Aug-2020 16:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Reservation::getType() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php:239
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(29): Page::displayUserDetails(Object(User), Array)
+#1 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 239
+[02-Aug-2020 16:52:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Reservation::noOfDays(), 0 passed in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php on line 239 and at least 2 expected in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php:59
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Page.class.php(239): Reservation->noOfDays()
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php(29): Page::displayUserDetails(Object(User), Array)
+#2 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Entity\Reservation.class.php on line 59
+[02-Aug-2020 16:59:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method User::getId() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php:28
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelUserProfile.php on line 28
+[02-Aug-2020 17:07:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ReservationDAO::initialize() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php on line 22
+[02-Aug-2020 17:07:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getAvaiableRooms() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php on line 29
+[02-Aug-2020 17:08:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Reservation::getAvaiableRooms() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php on line 29
+[02-Aug-2020 17:09:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Reservation::getAvaiableRooms() in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php on line 29
+[02-Aug-2020 17:11:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Reservation.roomNr' in 'on clause' in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php:72
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php(72): PDOStatement->execute()
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\RoomDAO.class.php(19): PDOService->execute()
+#2 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php(30): RoomDAO::getAvaiableRooms('standard')
+#3 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php on line 72
+[02-Aug-2020 17:14:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Reservation' in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php:72
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php(72): PDOStatement->execute()
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\RoomDAO.class.php(19): PDOService->execute()
+#2 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php(30): RoomDAO::getAvaiableRooms('standard')
+#3 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php on line 72
+[02-Aug-2020 17:15:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Reservation.roomNr' in 'on clause' in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php:72
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php(72): PDOStatement->execute()
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\RoomDAO.class.php(19): PDOService->execute()
+#2 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php(30): RoomDAO::getAvaiableRooms('standard')
+#3 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php on line 72
+[02-Aug-2020 17:25:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Reservation.roomNr' in 'on clause' in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php:72
+Stack trace:
+#0 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php(72): PDOStatement->execute()
+#1 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\RoomDAO.class.php(19): PDOService->execute()
+#2 C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\hotelReservation.php(30): RoomDAO::getAvaiableRooms('suite')
+#3 {main}
+  thrown in C:\Users\User\Desktop\3280 project\GroupProjectCSIS3280\inc\Utility\PDOService.class.php on line 72

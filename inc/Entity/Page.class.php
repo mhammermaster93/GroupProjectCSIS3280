@@ -2,7 +2,7 @@
 
 class Page {
 
-    public static $title = "Hotel";
+    public static $title = "Indigo Hotel";
 
     static function header() {
 ?>
@@ -56,7 +56,7 @@ class Page {
               </div>
           </div>
           <div class="text-center">
-              <small>Copyright &copy; Hotel Blank 2020</small>
+              <small>Copyright &copy; Indigo Hotel 2020</small>
           </div> 
         </div>
       </footer>
@@ -218,11 +218,11 @@ class Page {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Reservation #</th> 
+                                    <th>Res #</th> 
                                     <th>Payment date</th>
                                     <th>Room type</th>
-                                    <th>Check-in</th>
-                                    <th>Check-out</th>
+                                    <th>Check-in date</th>
+                                    <th>Check-out date</th>
                                     <th>Total price</th>
                             </thead>
 <?php
@@ -243,10 +243,9 @@ class Page {
                     echo "</tr>";
                     $i++;
             } 
-            echo "</table></section>";
+            echo "</table></section><br>";
 ?>
                         <button type="submit" name="makeReservation" class="btn btn-primary" onclick="location.href = './hotelReservation.php'" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Make Reservation</button>
-                        <button type="submit" name="viewReservations" class="btn btn-primary" onclick="location.href = './hotelViewReservations.php'" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">View Reservations</button>
                         <button type="submit" name="logout" class="btn btn-primary" onclick="location.href = './hotelLogout.php'" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Logout</button>
                         </div>
                   </div>

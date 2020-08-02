@@ -11,7 +11,7 @@
   <body>
       <!-- As a link -->
       <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Hotel Blank</a>
+        <a class="navbar-brand" href="#">Indigo Hotel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,7 +36,7 @@
             <div class="jumbotron" style="margin-top: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <div class="container text-center">
                     <h1 class="display-4">Welcome</h1>
-                    <p class="lead">Welcome to Hotel Blank, please follow the prompts below</p>
+                    <p class="lead">Welcome to Indigo Hotel, please follow the prompts below</p>
                     <hr class="my-4">
                     <a href="hotelLogin.php"><button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Sign In</button></a>        
                     <a href="hotelRegistration.php"><button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Create Account</button></a>
@@ -57,7 +57,7 @@
               </div>
           </div>
           <div class="text-center">
-              <small>Copyright &copy; Hotel Blank 2020</small>
+              <small>Copyright &copy; Indigo Hotel 2020</small>
           </div> 
         </div>
       </footer>
