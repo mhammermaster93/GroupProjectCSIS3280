@@ -1,0 +1,47 @@
+<?php
+// require once all the file
+require_once("inc/config.inc.php");
+require_once("inc/Entities/Page.class.php");
+require_once("inc/Entities/Reservation.class.php");
+require_once("inc/Entities/Room.class.php");
+require_once("inc/Entities/Service.class.php");
+require_once("inc/Entities/User.class.php");
+require_once("inc/Entities/Subclasses/Deluxe.class.php");
+require_once("inc/Entities/Subclasses/Standard.class.php");
+require_once("inc/Entities/Subclasses/Suite.class.php");
+require_once("inc/Utility/PDOService.class.php");
+require_once("inc/Utility/ReservationDAO.class.php");
+require_once("inc/Utility/RoomDAO.class.php");
+require_once("inc/Utility/ServiceDAO.class.php");
+require_once("inc/Utility/LoginManager.class.php");
+
+//Start the session
+session_start();
+
+ //Verify the Login
+if(LoginManager::verifyLogin()){
+    UserDAO::initialize();
+    $user = UserDAO::getUser($_SESSION['loggedin']);
+    
+    Page::header();
+    $reservations=Page::getReservations();
+    Page::displayReservationList ($reservations);
+   
+    if (isset($_POST["action"]) && $_POST["action"] == "edit")  {
+        $email=  $_POST["email"];
+        $reservationToEdit=ReservationDAO::getReservation($email);
+        ReservationDAO::updateReservation($reservationToEdit);
+    } 
+    if (isset($_POST["action"]) && $_POST["action"] == "delete")  {
+        $email= $_POST["email"];
+        $reservationToDelete=ReservationDAO::getReservation($email);
+        ReservationDAO::deleteReservation($reservationToDelete);
+    }
+
+
+    Page::footer();
+}
+else
+  header("Location: userLogin.php"); 
+
+?>
