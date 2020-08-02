@@ -144,16 +144,117 @@ class Page {
                                 <button type="submit" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Submit</button>
                             </form>
                             
-                            <!--we need to make the button POST-->
-                            
-                        </div> <!--End of column-->
-                        <!--Start New Row here-->
-                    </div> <!--end of Row1-->
+                        </div>
+                    </div> 
                 </div>
             </div>
 
 <?php
     }
+
+    static function showReservationPage(){ 
+?>
+        <div class="content">
+          <div class="row">
+              <div class="col-6 offset-3">
+                  <div class="jumbotron" style="margin-top: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                      <div class="container text-center">
+                          <h1 class="display-4">Reservation</h1>
+                          <hr class="my-4">
+                          <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                            <div class="form-group">
+                                <label for="dateFrom">From</label>
+                                <input name="startDate" type="date" required>
+                                <label for="dateTo">To</label>
+                                <input name="endDate" type="date" required>
+                            </div>
+                            <div class="form-group">
+                              <div class="dropdown">
+                                  <select class="btn btn-secondary dropdown-toggle" name="roomType">
+                                    <option class="dropdown-item" value="" autofocus selected>Room Type</option>
+                                    <option class="dropdown-item" value="standard">Standard</option>
+                                    <option class="dropdown-item" value="suite">Suite</option>
+                                    <option class="dropdown-item" value="deluxe">Deluxe</option>
+                                    </select>
+                              </div>  
+                            </div>
+                            <div class="form-group">
+                              <div class="dropdown">
+                                  <h4>Services</h4>
+                                  <select class="btn btn-secondary dropdown-toggle" name="services" multiple>
+                                    <option class="dropdown-item" value="breakfast">Breakfast</option>
+                                    <option class="dropdown-item" value="airport shuttle">Airport Shuttle</option>
+                                    <option class="dropdown-item" value="spa package">Spa Package</option>
+                                    <option class="dropdown-item" value="city tour">City Tour</option>
+                                    </select>
+                              </div>  
+                            </div>
+                          <button type="submit" name="submit" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      
+<?php 
+      }  
+
+      static function displayUserDetails(User $user, $reservations) {  
+?>
+        <div class="content">
+          <div class="row">
+              <div class="col-6 offset-3">
+                  <div class="jumbotron" style="margin-top: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                      <div class="container text-center">
+                        <p>Username:  <?php echo $user->getName(); ?><p>
+                        <p>Email:  <?php echo $user->getEmail(); ?><p>
+                        <p>Address:  <?php echo $user->getAddress() ?><p>
+                        <p>Postal Code:  <?php echo $user->getPostalCode() ?><p>
+                        <p>City:  <?php echo $user->getCity() ?><p>
+                        <p>Country:  <?php echo $user->getCountry() ?><p>
+                        <p>Phone:  <?php echo $user->getPhone() ?><p>
+                        <h4>Current reservations</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Reservation #</th> 
+                                    <th>Payment date</th>
+                                    <th>Room type</th>
+                                    <th>Check-in</th>
+                                    <th>Check-out</th>
+                                    <th>Total price</th>
+                            </thead>
+<?php
+            $i=0;
+            foreach($reservations as $reservation)  {
+                if($i%2==0){
+                echo "<tr class=\"evenRow\">";
+                }
+                else {
+                echo "<tr class=\"oddRow\">";
+                }      
+                    echo "<td>".$reservation->getReservationNr()."</td>";
+                    echo "<td>".$reservation->getPaymentDate()."</td>";
+                    echo "<td>".$reservation->getRoomType()."</td>";
+                    echo "<td>".$reservation->getStartDate()."</td>";
+                    echo "<td>".$reservation->getEndDate()."</td>";
+                    echo "<td>".$reservation->calculateTotalPrice($reservation)."</td>";
+                    echo "</tr>";
+                    $i++;
+            } 
+            echo "</table></section>";
+?>
+                        <button type="submit" name="makeReservation" class="btn btn-primary" onclick="location.href = './hotelReservation.php'" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Make Reservation</button>
+                        <button type="submit" name="viewReservations" class="btn btn-primary" onclick="location.href = './hotelViewReservations.php'" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">View Reservations</button>
+                        <button type="submit" name="logout" class="btn btn-primary" onclick="location.href = './hotelLogout.php'" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Logout</button>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+<?php
+   }
 
 }
 

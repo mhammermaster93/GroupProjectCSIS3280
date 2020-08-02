@@ -9,6 +9,9 @@ require_once("inc/Utility/LoginManager.class.php");
 require_once("inc/Utility/PDOService.class.php");
 require_once("inc/Utility/UserDAO.class.php");
 
+// diplay header
+Page::header();
+
 // Check if the form was posted
 if (!empty($_POST['emailInput'])) {
 
@@ -30,17 +33,21 @@ if (!empty($_POST['emailInput'])) {
             // Set user to logged in
             $_SESSION['logged_in'] = $user->getEmail();
 
-            // Forward to user page
-            header("Location: Booking.html");
+            $_SESSION['user'] = $user;
+            
+            // Forward to user profile page
+            header("Location: hotelUserProfile.php");
 
         }
 
     }
 }
+// display Login form
+else {
+    Page::displayLogin();
+}
 
-// display page elements
-Page::header();
-Page::displayLogin();
+// display footer
 Page::footer();
 
 ?>
