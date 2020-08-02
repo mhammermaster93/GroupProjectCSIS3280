@@ -1,0 +1,55 @@
+static function displayReservationList (Array $reservations)    {
+  ?>
+    <div class="content">
+      <div class="row">
+       <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+          <h1>Current reservations</h1>
+              <table>
+                <thead>
+                 <tr>
+                  <th>Reservation nr</th> 
+                  <th>Payment date</th>
+                  <th>Full Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Room type</th>
+                  <th>Room nr</th>
+                  <th>Check-in</th>
+                  <th>Check-out</th>
+                  <th>Total price</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+          </thead>
+          <?php
+             $i=0;
+              foreach($reservations as $reservation)  {
+                 if($i%2==0){
+                  echo "<tr class=\"evenRow\">";
+                 }
+                 else {
+                  echo "<tr class=\"oddRow\">";
+                 }      
+                   echo "<td>".$reservation->getReservationNr()."</td>";
+                   echo "<td>".$reservation->getPaymentDate()."</td>";
+                   echo "<td>".$reservation->getFullName()."</td>";
+                   echo "<td>".$reservation->getEmail()."</td>";
+                   echo "<td>".$reservation->getPhone()."</td>";
+                   echo "<td>".$reservation->getRoomType()."</td>";
+                   echo "<td>".$reservation->getRoomNr()."</td>";
+                   echo "<td>".$reservation->getStartDate()."</td>";
+                   echo "<td>".$$reservation->getEndDate()."</td>";
+                   echo "<td>".calculateTotalPrice($reservation)."</td>";
+                   echo "</tr>";
+         
+          ?>
+                <input type="hidden" name="email" value="<?php echo $reservationToEdit->getEmail() ?>">
+                <input type="hidden" name="action" value="edit">
+                <input type="submit" value="Edit Reservation"> 
+                <input type="hidden" name="action" value="delete">
+                <input type="submit" value="Delete Reservation">  
+                </table>
+               </form>
+             </div></div>";
+            <?php  $i++; 
+           }
+  }
